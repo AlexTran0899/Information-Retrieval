@@ -681,7 +681,8 @@ obj.feature_items
 feature_items
 if
 obj.image_src
-eventthumbnail
+event
+thumbnail
 title
 if
 obj.date_time

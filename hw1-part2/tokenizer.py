@@ -3,6 +3,7 @@ import sys
 import glob
 import os.path
 from spacy.matcher import Matcher
+import time
 
 def match_uppercase(matcher, doc, i, matches):
     match_id, start, end = matches[i]
@@ -31,7 +32,7 @@ spacy.tokens.Token.set_extension('modified_text', default=None, force=True)
 # Define matching patterns
 token_patterns = [
     [{"TEXT": {"REGEX": r"[0-9]+"}}],    # Number match
-    [{"TEXT": {"REGEX": r"[A-Z]"}}],  # Uppercase match
+    [{"TEXT": {"REGEX": r"[A-Z]"}}],     # Uppercase match
     [{"TEXT": {"REGEX": "\S+"}}],        # Any other NON-WHITESPACE token
 ]
 
@@ -133,9 +134,17 @@ if not os.path.exists(inputDir) or not os.path.exists(outputDir):
 file_list = glob.glob(inputDir + '/*.html')
 total_token_count = 0
 
+# Record the start time
+start_time = time.time()
+
 # Process each file in the input directory
 for file_name in file_list:
     tokenize_and_save(file_name)
 
+# Record the end time
+end_time = time.time()
+
+# Calculate and print the duration
 print(f"Total tokens: {total_token_count}")
 print("Tokenization complete. Files saved with '.out' extension.")
+print(f"Processing time: {end_time - start_time:.2f} seconds")

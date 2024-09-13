@@ -266,7 +266,9 @@ name="scope
 value=
 hostname
 give</a
-universityofarkansas
+university
+of
+arkansas
 links</a><div
 aria
 labelledby="uark
@@ -480,7 +482,12 @@ arkansas
 fayetteville
 ar
 2000</a
-mapofuniversityofarkansascampus
+map
+of
+university
+of
+arkansas
+campus
 function
 parsenews('//campusdata.uark.edu
 apiv2
