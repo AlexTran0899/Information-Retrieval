@@ -1,0 +1,68 @@
+Script started on 2024-09-07 07:59:31-0500
+groups: cannot find name for group ID 762800513
+]0;phtran@turing: ~/InformationRetrieval/hw1-part-1[01;32mphtran@turing[00m:[01;34m~/InformationRetrieval/hw1-part-1[00m$ ls -lt smallfiles/
+total 12
+-rw-rw-r-- 1 phtran phtran 779 Sep  7 07:54 hard.html
+-rw-rw-r-- 1 phtran phtran 665 Sep  7 07:54 medium.html
+-rw-rw-r-- 1 phtran phtran 262 Sep  7 07:54 simple.html
+]0;phtran@turing: ~/InformationRetrieval/hw1-part-1[01;32mphtran@turing[00m:[01;34m~/InformationRetrieval/hw1-part-1[00m$ ls-[K -lt smalloutput/
+total 0
+]0;phtran@turing: ~/InformationRetrieval/hw1-part-1[01;32mphtran@turing[00m:[01;34m~/InformationRetrieval/hw1-part-1[00m$ ./tokenize.sh smallfiles/ [K[K smalloutput/[K
+----running
+Input Directory: smallfiles/
+Output Directory: smalloutput
+Processing file: smallfiles/hard.html
+Processing file: smallfiles/medium.html
+Processing file: smallfiles/simple.html
+----done
+]0;phtran@turing: ~/InformationRetrieval/hw1-part-1[01;32mphtran@turing[00m:[01;34m~/InformationRetrieval/hw1-part-1[00m$ head smalloutput/ [K[K medium.out[1Pmedium.out.medium.out[1Pmedium.out/medium.out
+<
+html
+>
+
+
+<
+head><title
+>
+Another
+test
+]0;phtran@turing: ~/InformationRetrieval/hw1-part-1[01;32mphtran@turing[00m:[01;34m~/InformationRetrieval/hw1-part-1[00m$ head smalloutput/.[K/[Kfreq.txt 
+     67 
+     45 >
+     37 <
+     22    
+     16 "
+     13 ,
+     12 .
+      6 /
+      5 p
+      5 in
+]0;phtran@turing: ~/InformationRetrieval/hw1-part-1[01;32mphtran@turing[00m:[01;34m~/InformationRetrieval/hw1-part-1[00m$ head smalloutput/al[K[Kalh[Kpha.txt 
+     67 
+     37 <
+      1 =
+     45 >
+      1  
+      4   
+     22    
+      4        
+      5 -
+     13 ,
+]0;phtran@turing: ~/InformationRetrieval/hw1-part-1[01;32mphtran@turing[00m:[01;34m~/InformationRetrieval/hw1-part-1[00m$ ls lit[K[K[Klt - [K[K[K[K[K[K[K[Kls -lt smalloutput/[K
+total 28
+-rw-r----- 1 phtran phtran 2438 Sep  7 08:00 freq.txt
+-rw-r----- 1 phtran phtran 2438 Sep  7 08:00 alpha.txt
+-rw-r----- 1 phtran phtran 1963 Sep  7 08:00 all_tokens.txt
+-rw-r----- 1 phtran phtran 2438 Sep  7 08:00 unique_terms.txt
+-rw-r----- 1 phtran phtran  301 Sep  7 08:00 simple.out
+-rw-r----- 1 phtran phtran  790 Sep  7 07:59 medium.out
+-rw-r----- 1 phtran phtran  872 Sep  7 07:59 hard.out
+]0;phtran@turing: ~/InformationRetrieval/hw1-part-1[01;32mphtran@turing[00m:[01;34m~/InformationRetrieval/hw1-part-1[00m$ ls -lt smallfiles/
+total 12
+-rw-rw-r-- 1 phtran phtran 779 Sep  7 07:54 hard.html
+-rw-rw-r-- 1 phtran phtran 665 Sep  7 07:54 medium.html
+-rw-rw-r-- 1 phtran phtran 262 Sep  7 07:54 simple.html
+]0;phtran@turing: ~/InformationRetrieval/hw1-part-1[01;32mphtran@turing[00m:[01;34m~/InformationRetrieval/hw1-part-1[00m$ exit
+exit
+
+Script done on 2024-09-07 08:00:52-0500

@@ -1,0 +1,20 @@
+Script started on 2024-08-30 08:21:12-0500
+groups: cannot find name for group ID 762800513
+]0;phtran@turing: ~/InformationRetrieval/Hw0[01;32mphtran@turing[00m:[01;34m~/InformationRetrieval/Hw0[00m$ h[K./hw0-1.sh simple.html
+----running
+tokenizing file: simple.html
+----done
+]0;phtran@turing: ~/InformationRetrieval/Hw0[01;32mphtran@turing[00m:[01;34m~/InformationRetrieval/Hw0[00m$ hw0-1[K[K[K[K[K./hw0-1[K2.sh . ./output
+----running
+Input Directory: ./
+Output Directory: ./output
+----done
+]0;phtran@turing: ~/InformationRetrieval/Hw0[01;32mphtran@turing[00m:[01;34m~/InformationRetrieval/Hw0[00m$ ./hw0-2.sh . ./output[K[K[K[K[K[K[K
+----running
+Input Directory: ./
+Output Directory: .
+----done
+]0;phtran@turing: ~/InformationRetrieval/Hw0[01;32mphtran@turing[00m:[01;34m~/InformationRetrieval/Hw0[00m$ exit
+exit
+
+Script done on 2024-08-30 08:22:07-0500
