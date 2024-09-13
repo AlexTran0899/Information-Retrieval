@@ -21,13 +21,7 @@ if [ -z "$(ls -A "$input_directory")" ]; then
     exit 1
 fi
 
-# Process each .html file in the input directory
-for FILE in "$input_directory"*; do 
-    if [[ "$FILE" != "$0" && -f "$FILE" && "${FILE##*.}" == "html" ]]; then
-        echo "Processing file: $FILE"
-        python3 tokenizer.py "$FILE" "$output_directory" 2>>error_log.txt
-    fi
-done
+python3 tokenizer.py "$input_directory" "$output_directory" 2>>error_log.txt
 
 # Concatenate all the output .txt files into one file
 cat "$output_directory"/*.out > "$output_directory/all_tokens.txt"

@@ -102,7 +102,6 @@ def tokenize_and_save(file_name):
     
     for token in doc:
         text = token._.modified_text if token._.modified_text else token.text
-        
         if token.text == '<':
             inHtml = True
         elif token.text == '>':
@@ -117,6 +116,7 @@ def tokenize_and_save(file_name):
         else:
             if(is_float(token.text)): continue
             elif(token.is_punct): continue
+            elif(token.is_space): continue
             token_list.append(text)
 
     save_tokens_to_file(file_name, token_list)
