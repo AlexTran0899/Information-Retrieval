@@ -36,7 +36,11 @@ token_patterns = [
     [{"TEXT": {"REGEX": "\S+"}}],        # Any other NON-WHITESPACE token
 ]
 
-nlp = spacy.load("en_core_web_sm")
+# Load spaCy model with unnecessary components disabled
+nlp = spacy.load("en_core_web_sm", disable=["parser", "ner", "tagger"])
+
+# Increase the max_length limit to handle larger texts
+nlp.max_length = 2000000  # Adjust this value as needed
 matcher = Matcher(nlp.vocab)
 
 # Add match patterns to matcher
@@ -90,38 +94,45 @@ def is_float(string):
     except ValueError:
         return False  # Conversion failed
     
-# Tokenize a single file
 def tokenize_and_save(file_name):
     global total_token_count
-    doc = read_file(file_name)
-    matcher(doc)
-
-    # Build the token list using the modified text
-    token_list = []
-    inHtml = False
-    temp = ''
+    try:
+        doc = read_file(file_name)
+        matcher(doc)
     
-    for token in doc:
-        text = token._.modified_text if token._.modified_text else token.text
-        if token.text == '<':
-            inHtml = True
-        elif token.text == '>':
-            alt = get_html_attribute_value(temp, 'alt="')
-            contents = get_html_attribute_value(temp, 'contents="')
-            temp = ''
-            token_list += alt.split(' ')
-            token_list += contents.split(' ')
-            inHtml = False
-        elif inHtml == True:
-            temp += text + ' '
-        else:
-            if(is_float(token.text)): continue
-            elif(token.is_punct): continue
-            elif(token.is_space): continue
-            token_list.append(text)
-
-    save_tokens_to_file(file_name, token_list)
-    total_token_count += len(token_list)
+        # Build the token list using the modified text
+        token_list = []
+        inHtml = False
+        temp = ''
+        
+        for token in doc:
+            text = token._.modified_text if token._.modified_text else token.text
+            if token.text == '<':
+                inHtml = True
+            elif token.text == '>':
+                alt = get_html_attribute_value(temp, 'alt="')
+                contents = get_html_attribute_value(temp, 'contents="')
+                temp = ''
+                if alt:
+                    token_list += alt.split(' ')
+                if contents:
+                    token_list += contents.split(' ')
+                inHtml = False
+            elif inHtml:
+                temp += text + ' '
+            else:
+                if is_float(text):
+                    continue
+                elif token.is_punct:
+                    continue
+                elif token.is_space:
+                    continue
+                token_list.append(text)
+    
+        save_tokens_to_file(file_name, token_list)
+        total_token_count += len(token_list)
+    except Exception as e:
+        print(f"Error processing file {file_name}: {e}")
 
 # Directory and file setup
 inputDir = sys.argv[1]
