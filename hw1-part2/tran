@@ -1,0 +1,18 @@
+Script started on 2024-09-13 20:36:07-0500
+groups: cannot find name for group ID 762800513
+]0;phtran@turing: ~/Information-Retrieval/hw1-part2[01;32mphtran@turing[00m:[01;34m~/Information-Retrieval/hw1-part2[00m$ exitcode .git pull origin maincode .[Kgit pull origin maincode .[K[2Pexit[Kto[K[K./tokenize.sh specifc[K[K[K[K[K[K[Kspecifc outfile[K[K[K[K[K[K[K.
+----running
+Input Directory: specifc/
+Output Directory: .
+Processing file: specifc/simple.html
+Processing file: specifc/uark_26.html
+Processing file: specifc/medium.html
+Processing file: specifc/hard.html
+Total tokens: 1210
+Tokenization complete. Files saved with '.out' extension.
+Processing time: 1.71 seconds
+----done
+]0;phtran@turing: ~/Information-Retrieval/hw1-part2[01;32mphtran@turing[00m:[01;34m~/Information-Retrieval/hw1-part2[00m$ [K]0;phtran@turing: ~/Information-Retrieval/hw1-part2[01;32mphtran@turing[00m:[01;34m~/Information-Retrieval/hw1-part2[00m$ [K]0;phtran@turing: ~/Information-Retrieval/hw1-part2[01;32mphtran@turing[00m:[01;34m~/Information-Retrieval/hw1-part2[00m$ x[Kexit
+exit
+
+Script done on 2024-09-13 20:37:02-0500
