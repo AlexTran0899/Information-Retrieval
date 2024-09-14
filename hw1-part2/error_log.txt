@@ -252,3 +252,7 @@ Traceback (most recent call last):
   File "/Users/a1234/Library/Python/3.9/lib/python/site-packages/spacy/pipeline/attributeruler.py", line 149, in match
     matches = self.matcher(doc, allow_missing=True, as_spans=False)
 KeyboardInterrupt
+/usr/local/lib/python3.6/dist-packages/spacy/pipeline/lemmatizer.py:211: UserWarning: [W108] The rule-based lemmatizer did not find POS annotation for one or more tokens. Check that your pipeline includes components that assign token.pos, typically 'tagger'+'attribute_ruler' or 'morphologizer'.
+  warnings.warn(Warnings.W108)
+/usr/local/lib/python3.6/dist-packages/spacy/pipeline/lemmatizer.py:211: UserWarning: [W108] The rule-based lemmatizer did not find POS annotation for one or more tokens. Check that your pipeline includes components that assign token.pos, typically 'tagger'+'attribute_ruler' or 'morphologizer'.
+  warnings.warn(Warnings.W108)

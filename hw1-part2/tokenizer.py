@@ -37,10 +37,10 @@ token_patterns = [
 ]
 
 # Load spaCy model with unnecessary components disabled
-nlp = spacy.load("en_core_web_sm", disable=["parser", "ner", "tagger"])
+nlp = spacy.load("en_core_web_sm")
 
 # Increase the max_length limit to handle larger texts
-nlp.max_length = 2000000  # Adjust this value as needed
+nlp.max_length = 5000000  # Adjust this value as needed
 matcher = Matcher(nlp.vocab)
 
 # Add match patterns to matcher
