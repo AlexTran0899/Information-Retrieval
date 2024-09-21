@@ -1,0 +1,3 @@
+/Users/a1234/Desktop/Information Retrieval/hw2-files/cmake-build-debug/CMakeFiles/hw2_files.dir
+/Users/a1234/Desktop/Information Retrieval/hw2-files/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/a1234/Desktop/Information Retrieval/hw2-files/cmake-build-debug/CMakeFiles/rebuild_cache.dir
