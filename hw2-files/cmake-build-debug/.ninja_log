@@ -1,16 +1,9 @@
 # ninja log v6
 4	252	1726883581646033366	CMakeFiles/hw2_files.dir/Utils/Utils.cpp.o	8f6fdeb6ff6e145e
-334	374	1726887649863440080	hw2_files	bf7b7ed2afb278ab
+326	372	1726890031724059194	hw2_files	bf7b7ed2afb278ab
 5	300	1726886385625965716	CMakeFiles/hw2_files.dir/Source/InvertedFile.cpp.o	743a76b8b0a4c0e
-5	334	1726887649534524040	CMakeFiles/hw2_files.dir/source/DictFile.cpp.o	6e598488b3174077
-4	328	1726887649534292624	CMakeFiles/hw2_files.dir/source/MapFile.cpp.o	f08de73b2ade2b66
-5	305	1726887080433134575	CMakeFiles/hw2_files.dir/main.cpp.o	9d6692a9b39d940b
-0	37	1726886043178304868	build.ninja	cdc6000d7549ece0
-5	331	1726887649534643873	CMakeFiles/hw2_files.dir/source/PostFile.cpp.o	bcd2d4fdf360d931
-4	310	1726887667454096248	CMakeFiles/hw2_files.dir/main.cpp.o	9d6692a9b39d940b
 5	323	1726887667454312914	CMakeFiles/hw2_files.dir/source/DictFile.cpp.o	6e598488b3174077
-323	364	1726887667773105204	hw2_files	bf7b7ed2afb278ab
-5	305	1726887674929456751	CMakeFiles/hw2_files.dir/main.cpp.o	9d6692a9b39d940b
-305	345	1726887675230168614	hw2_files	bf7b7ed2afb278ab
-4	308	1726887679819218785	CMakeFiles/hw2_files.dir/main.cpp.o	9d6692a9b39d940b
-308	348	1726887680122710096	hw2_files	bf7b7ed2afb278ab
+4	328	1726887649534292624	CMakeFiles/hw2_files.dir/source/MapFile.cpp.o	f08de73b2ade2b66
+15	326	1726890031412768075	CMakeFiles/hw2_files.dir/main.cpp.o	9d6692a9b39d940b
+0	37	1726890165908459209	build.ninja	cdc6000d7549ece0
+5	331	1726887649534643873	CMakeFiles/hw2_files.dir/source/PostFile.cpp.o	bcd2d4fdf360d931
