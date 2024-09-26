@@ -3,6 +3,7 @@
 //
 
 #include <MapFile.h>
+#include <iomanip>
 
 MapFile::MapFile() {
     num_records = -1;
@@ -13,12 +14,12 @@ MapFile::~MapFile() = default;
 
 bool MapFile::openForWrite(const std::string& filename) {
     this->num_records = 0;
-    this->map_file.open("../Data/" + filename + ".data", std::ios::out | std::ios::app);
+    this->map_file.open("/home/phtran/Information-Retrieval/hw2-files/Data/" + filename + ".data", std::ios::out);
     return true;
 }
 
 bool MapFile::openForRead(const std::string& filename) {
-    this->map_file.open("../Data/" + filename + ".data", std::ios::in);
+    this->map_file.open("/home/phtran/Information-Retrieval/hw2-files/Data/" + filename + ".data", std::ios::in);
     return true;
 }
 

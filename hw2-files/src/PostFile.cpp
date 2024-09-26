@@ -4,6 +4,7 @@
 
 #include <PostFile.h>
 #include <sstream>
+#include <iomanip>
 
 PostFile::PostFile() {
     num_records = -1;
@@ -14,12 +15,12 @@ PostFile::~PostFile() = default;
 
 bool PostFile::openForWrite(const std::string& filename) {
     this->num_records = 0;
-    this->post_file.open("../Data/" + filename + ".data", std::ios::out | std::ios::app);
+    this->post_file.open("/home/phtran/Information-Retrieval/hw2-files/Data/" + filename + ".data", std::ios::out);
     return true;
 }
 
 bool PostFile::openForRead(const std::string& filename) {
-    this->post_file.open("../Data/" + filename + ".data", std::ios::in);
+    this->post_file.open("/home/phtran/Information-Retrieval/hw2-files/Data/" + filename + ".data", std::ios::in);
     return true;
 }
 

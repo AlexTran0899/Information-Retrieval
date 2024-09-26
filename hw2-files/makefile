@@ -1,24 +1,31 @@
-PROJECT_DIR=.
+# Compiler settings
+CXX=g++
+CXXFLAGS=-std=c++17 -IInclude
 
-CFLAGS=-I${PROJECT_DIR}/include/
-CC=gcc
-CXX=g++ -std=c++17
-LDFLAGS=
+# Output executable
+output: main.o DictFile.o InvertedFile.o MapFile.o PostFile.o Utils.o
+	$(CXX) main.o DictFile.o InvertedFile.o MapFile.o PostFile.o Utils.o -o output
+	@rm -f *.o
 
-SRC_DIR=${PROJECT_DIR}/src
-OBJ_DIR=${PROJECT_DIR}/objs
+# Individual object files and their dependencies
+main.o: src/main.cpp
+	$(CXX) $(CXXFLAGS) -c src/main.cpp
 
+DictFile.o: src/DictFile.cpp Include/DictFile.h
+	$(CXX) $(CXXFLAGS) -c src/DictFile.cpp
 
-all: run
+InvertedFile.o: src/InvertedFile.cpp Include/InvertedFile.h
+	$(CXX) $(CXXFLAGS) -c src/InvertedFile.cpp
 
-run: compile
+MapFile.o: src/MapFile.cpp Include/MapFile.h
+	$(CXX) $(CXXFLAGS) -c src/MapFile.cpp
 
-compile: main
+PostFile.o: src/PostFile.cpp Include/PostFile.h
+	$(CXX) $(CXXFLAGS) -c src/PostFile.cpp
 
+Utils.o: src/Utils.cpp Include/Utils.h
+	$(CXX) $(CXXFLAGS) -c src/Utils.cpp
 
-main: ${OBJ_DIR}/DictFile.o ${OBJ_DIR}/InvertedFile.o ${OBJ_DIR}/MapFile.o ${OBJ_DIR}/PostFile.o  ${OBJ_DIR}/Utils.o
-	${CXX} ${CFLAGS} $^ ${LDFLAGS} -o bin/$@ 
-
-
-${OBJ_DIR}/%.o: ${SRC_DIR}/%.cpp
-	${CXX} $(CFLAGS) -c $< -o $@
+# Clean command to remove object files and output executable
+clean:
+	rm -f *.o output

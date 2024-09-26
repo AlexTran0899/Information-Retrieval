@@ -4,6 +4,8 @@
 
 #include <DictFile.h>
 #include <sstream>
+#include <iostream>
+#include <iomanip> 
 
 DictFile::DictFile() {
     num_records = -1;
@@ -14,12 +16,12 @@ DictFile::~DictFile() = default;
 
 bool DictFile::openForWrite(const std::string& filename) {
     this->num_records = 0;
-    this->dict_file.open("../Data/" + filename + ".data", std::ios::out | std::ios::app);
+    this->dict_file.open("/home/phtran/Information-Retrieval/hw2-files/Data/" + filename + ".data", std::ios::out | std::ios::app);
     return true;
 }
 
 bool DictFile::openForRead(const std::string& filename) {
-    this->dict_file.open("../Data/" + filename + ".data", std::ios::in);
+    this->dict_file.open("/home/phtran/Information-Retrieval/hw2-files/Data/" + filename + ".data", std::ios::in);
     return true;
 }
 
