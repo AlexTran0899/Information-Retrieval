@@ -1,0 +1,30 @@
+Opening files for writing...
+Writing records...
+Records written and files closed.
+Opening files for reading...
+Reading mapFile records...
+doc_name is: Document1
+Map Record 0: Document1
+doc_name is: Document2
+Map Record 1: Document2
+doc_name is: -1
+Map Record 2: -1
+Reading dictFile records...
+Dict Record 0: term=term1, num_docs=2, start=0
+Dict Record 1: term=term2, num_docs=3, start=5
+Dict Record 2: term=-1, num_docs=-1, start=-1
+Reading postFile records...
+Post Record 0: doc_id=0, freq=1
+Post Record 1: doc_id=1, freq=2
+Post Record 2: doc_id=-1, freq=-1
+Files closed after reading.
+
+total 24
+-rw-r--r--@  1 a1234  staff   587 Sep 20 22:48 tran
+drwxr-xr-x@ 12 a1234  staff   384 Sep 20 22:46 cmake-build-debug
+-rw-r--r--@  1 a1234  staff  2812 Sep 20 22:02 main.cpp
+drwxr-xr-x@  6 a1234  staff   192 Sep 20 22:01 Source
+drwxr-xr-x@  5 a1234  staff   160 Sep 20 21:50 Data
+drwxr-xr-x@  6 a1234  staff   192 Sep 20 21:31 Include
+-rw-r--r--@  1 a1234  staff   393 Sep 20 21:24 CMakeLists.txt
+drwxr-xr-x@  4 a1234  staff   128 Sep 20 20:52 Utils

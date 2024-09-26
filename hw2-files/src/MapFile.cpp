@@ -2,7 +2,7 @@
 // Created by 1234 on 9/20/24.
 //
 
-#include "../Include/MapFile.h"
+#include <MapFile.h>
 
 MapFile::MapFile() {
     num_records = -1;

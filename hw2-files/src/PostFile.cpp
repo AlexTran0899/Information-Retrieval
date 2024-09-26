@@ -2,7 +2,7 @@
 // Created by 1234 on 9/20/24.
 //
 
-#include "../Include/PostFile.h"
+#include <PostFile.h>
 #include <sstream>
 
 PostFile::PostFile() {

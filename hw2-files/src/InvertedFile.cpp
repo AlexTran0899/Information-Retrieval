@@ -1,7 +1,7 @@
 //
 // Created by 1234 on 9/20/24.
 //
-#include "../Include/InvertedFile.h"
+#include <InvertedFile.h>
 InvertedFile::InvertedFile() {
 
 }

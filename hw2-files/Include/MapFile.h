@@ -6,7 +6,7 @@
 #define MAPFILE_H
 #include <fstream>
 #include <iostream>
-#include "../Utils/Utils.h"
+#include <Utils.h>
 
 #endif //MAPFILE_H
 class MapFile {

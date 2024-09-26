@@ -2,7 +2,7 @@
 // Created by 1234 on 9/20/24.
 //
 
-#include "../Include/DictFile.h"
+#include <DictFile.h>
 #include <sstream>
 
 DictFile::DictFile() {

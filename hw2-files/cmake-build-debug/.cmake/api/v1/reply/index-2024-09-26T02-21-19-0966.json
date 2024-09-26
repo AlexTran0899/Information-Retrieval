@@ -8,25 +8,25 @@
 		},
 		"paths" : 
 		{
-			"cmake" : "/opt/homebrew/Cellar/cmake/3.30.3/bin/cmake",
-			"cpack" : "/opt/homebrew/Cellar/cmake/3.30.3/bin/cpack",
-			"ctest" : "/opt/homebrew/Cellar/cmake/3.30.3/bin/ctest",
-			"root" : "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake"
+			"cmake" : "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake",
+			"cpack" : "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cpack",
+			"ctest" : "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest",
+			"root" : "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29"
 		},
 		"version" : 
 		{
 			"isDirty" : false,
 			"major" : 3,
-			"minor" : 30,
-			"patch" : 3,
-			"string" : "3.30.3",
+			"minor" : 29,
+			"patch" : 6,
+			"string" : "3.29.6",
 			"suffix" : ""
 		}
 	},
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-b36309df7dc8845ee769.json",
+			"jsonFile" : "codemodel-v2-2a6c4b16fa4f6b49c431.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
@@ -35,7 +35,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-353707120f1e2dda8949.json",
+			"jsonFile" : "cache-v2-0bf7c7154c8602b3aa2b.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,12 +44,12 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-65b55b495e886a87c6ef.json",
+			"jsonFile" : "cmakeFiles-v1-7edace487b5bdee79000.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
 				"major" : 1,
-				"minor" : 1
+				"minor" : 0
 			}
 		},
 		{
@@ -66,7 +66,7 @@
 	{
 		"cache-v2" : 
 		{
-			"jsonFile" : "cache-v2-353707120f1e2dda8949.json",
+			"jsonFile" : "cache-v2-0bf7c7154c8602b3aa2b.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -76,17 +76,17 @@
 		},
 		"cmakeFiles-v1" : 
 		{
-			"jsonFile" : "cmakeFiles-v1-65b55b495e886a87c6ef.json",
+			"jsonFile" : "cmakeFiles-v1-7edace487b5bdee79000.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
 				"major" : 1,
-				"minor" : 1
+				"minor" : 0
 			}
 		},
 		"codemodel-v2" : 
 		{
-			"jsonFile" : "codemodel-v2-b36309df7dc8845ee769.json",
+			"jsonFile" : "codemodel-v2-2a6c4b16fa4f6b49c431.json",
 			"kind" : "codemodel",
 			"version" : 
 			{

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "./Include/InvertedFile.h"
+#include <InvertedFile.h>
 
 int main() {
     InvertedFile invFile;
