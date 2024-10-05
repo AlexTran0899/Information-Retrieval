@@ -26,12 +26,25 @@ flex tokenizer.l
 g++ lex.yy.c -o tokenizer -lfl
 ./tokenizer "$input_directory" "$output_directory"
 
-# #!/bin/bash
-# make
-# echo "Running..."
-# # Read arguments from the file and pass them to the program
-# CONFIG=$(<CONFIG)
+# # Concatenate all the output .txt files into one file
+# cat "$output_directory"/*.out > "$output_directory/all_tokens.txt"
 
-# # Run the program with the arguments
-# ./output $CONFIG
-# echo '----done'
+# # Sort the tokens, count unique occurrences, and store in a new file
+# sort "$output_directory/all_tokens.txt" | uniq -c > "$output_directory/unique_terms.txt"
+
+# # Create alpha.txt by sorting terms alphabetically
+# sort -k2 "$output_directory/unique_terms.txt" > "$output_directory/alpha.txt"
+
+# # Create freqs.txt by sorting terms by frequency (numerically, decreasing order)
+# sort -nr "$output_directory/unique_terms.txt" > "$output_directory/freq.txt"
+
+#!/bin/bash
+make
+echo "Running..."
+# Read arguments from the file and pass them to the program
+CONFIG=$(<CONFIG)
+
+# Run the program with the arguments
+./output $CONFIG
+
+echo '----done'

@@ -21,7 +21,7 @@ public:
     bool openForRead(const std::string& file_path);
     void closeAfterWrite();
     void closeAfterRead();
-    bool writeRecord(const int& doc_id, const int& freq);
+    bool writeRecord(const int& doc_id, const int& freq, const std::string & token);
     bool readRecord(int record_num, int& doc_id, int& freq);
 
 };

@@ -9,6 +9,9 @@ using namespace std;
 //---------  INSERT ANY CODE CALLED BY THE LEX RULES HERE --------
 void DowncaseAndPrint(const char Str[])
 {
+    if (strlen(Str) > 45) {
+        return; 
+    }
     char Ch;
 
     for (int i = 0 ; i < (int)strlen(Str); i++)
@@ -106,7 +109,7 @@ INTEGER           [0-9]+
 %%
 {HTML_COMMENT}        ;   // Ignore HTML comments (e.g., <!-- comment -->)
 {HTML_CLOSING_TAGS}   ;   // Ignore Html closing tags
-{URLS}  { MatchUrls(); };  
+{URLS}  {if (strlen(yytext) < 45) MatchUrls(); };  
 {HTML_OPENING_TAGS}  {HandleHTMLOpenTags(yytext);}; 
 {FLOAT} ;  // Ignore floats
 {INTEGER} { MatchInteger(); };  // Process integers

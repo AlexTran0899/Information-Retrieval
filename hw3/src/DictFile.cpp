@@ -10,7 +10,7 @@
 
 DictFile::DictFile() {
     num_records = -1;
-    record_size = 35;
+    record_size = 65;
 }
 
 DictFile::~DictFile() = default;
@@ -44,8 +44,8 @@ bool DictFile::writeRecord(const std::string& terms, int num_docs, int start) {
     }
 
     this->dict_file
-    << std::setw(14) << std::left << terms
-    << std::setw(10) << std::left << num_docs
+    << std::setw(45) << std::left << terms
+    << std::setw(9) << std::left << num_docs
     << std::setw(10) << std::left << start
     << std::endl;
 

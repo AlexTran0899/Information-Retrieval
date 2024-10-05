@@ -42,8 +42,8 @@ bool InvertedFile::writeDictRecord(const std::string& terms, int num_docs, int s
     dictFile.writeRecord(terms, num_docs, start);
     return true;
 }
-bool InvertedFile::writePostRecord(const int& doc_id, const int& freq) {
-    postFile.writeRecord(doc_id, freq);
+bool InvertedFile::writePostRecord(const int& doc_id, const int& freq, const std::string & token) {
+    postFile.writeRecord(doc_id, freq, token);
     return true;
 }
 

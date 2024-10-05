@@ -24,7 +24,7 @@ public:
 
     bool writeMapRecord(const std::string& document_name);
     bool writeDictRecord(const std::string& terms, int num_docs, int start);
-    bool writePostRecord(const int& doc_id, const int& freq);
+    bool writePostRecord(const int& doc_id, const int& freq, const std::string & token);
 
     bool readMapRecord(int record_num, std::string& document_name);
     bool readDictRecord(int record_num, std::string& terms, int& num_docs, int& start);

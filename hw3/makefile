@@ -1,6 +1,6 @@
 # Compiler settings
 CXX=g++
-CXXFLAGS=-std=c++11 -IInclude
+CXXFLAGS=-std=c++17 -IInclude
 
 # Output executable
 output: main.o DictFile.o InvertedFile.o MapFile.o PostFile.o Utils.o

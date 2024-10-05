@@ -38,7 +38,7 @@ void PostFile::closeAfterRead() {
     this->post_file.close();
 }
 
-bool PostFile::writeRecord(const int& doc_id, const int& freq) {
+bool PostFile::writeRecord(const int& doc_id, const int& freq, const std::string & token) {
     if(!post_file.is_open()) {
         std::cerr << "Unable to write record, map file currently closed" << std::endl;
         return false;
