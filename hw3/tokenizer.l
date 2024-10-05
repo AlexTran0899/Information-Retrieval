@@ -102,18 +102,17 @@ HTML_COMMENT      <!--(.|\n)*?-->
 HTML_OPENING_TAGS <[a-zA-Z][^>\/]*>
 HTML_CLOSING_TAGS <\/[a-zA-Z][^>\/]*>
 URLS              https?:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,6}(\/[a-zA-Z0-9\-._~\/]*)?
-WORD              [A-Za-z][a-z]*
+WORD              [A-Za-z]*
 FLOAT             [0-9]+.[0-9]+
 INTEGER           [0-9]+
 
 %%
-{HTML_COMMENT}        ;   // Ignore HTML comments (e.g., <!-- comment -->)
+{WORD}  { if (strlen(yytext) > 1) DowncaseAndPrint(yytext); };  // Process words with length > 1
 {HTML_CLOSING_TAGS}   ;   // Ignore Html closing tags
 {URLS}  {if (strlen(yytext) < 45) MatchUrls(); };  
 {HTML_OPENING_TAGS}  {HandleHTMLOpenTags(yytext);}; 
 {FLOAT} ;  // Ignore floats
 {INTEGER} { MatchInteger(); };  // Process integers
-{WORD}  { if (strlen(yytext) > 1) DowncaseAndPrint(yytext); };  // Process words with length > 1
 [\n\r\t ] ;  // Ignore whitespace
 . ;  // Ignore any other characters
 %%
