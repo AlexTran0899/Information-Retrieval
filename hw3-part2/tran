@@ -1,0 +1,86 @@
+Script started on 2024-10-04 21:42:31-0500
+groups: cannot find name for group ID 762800513
+]0;phtran@turing: ~/Information-Retrieval/hw3[01;32mphtran@turing[00m:[01;34m~/Information-Retrieval/hw3[00m$ exit[1Ppwd[1Plscd Information-Retrieval/ls[Kcd Information-Retrieval/ls[Kpwdexit[Ktok[K[K[K./tokenize.sh smallfiles/ Output
+----running
+Input Directory: smallfiles/
+Output Directory: Output
+
+Processing file smallfiles//simple.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file smallfiles//uark_26.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file smallfiles//2.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file smallfiles//medium.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file smallfiles//1.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file smallfiles//0.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file smallfiles//index.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file smallfiles//3.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file smallfiles//vanderbilt_26.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file smallfiles//hard.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file smallfiles//wisc_26.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+Done tokenizing.  Good place to write the dict and post files.
+g++ -std=c++17 -IInclude -c src/main.cpp
+g++ -std=c++17 -IInclude -c src/DictFile.cpp
+g++ -std=c++17 -IInclude -c src/InvertedFile.cpp
+g++ -std=c++17 -IInclude -c src/MapFile.cpp
+g++ -std=c++17 -IInclude -c src/PostFile.cpp
+g++ -std=c++17 -IInclude -c src/Utils.cpp
+g++ main.o DictFile.o InvertedFile.o MapFile.o PostFile.o Utils.o -o output
+Running...
+Opened file: /home/phtran/Information-Retrieval/hw3/Output/index.out
+Opened file: /home/phtran/Information-Retrieval/hw3/Output/2.out
+Opened file: /home/phtran/Information-Retrieval/hw3/Output/wisc_26.out
+Opened file: /home/phtran/Information-Retrieval/hw3/Output/vanderbilt_26.out
+Opened file: /home/phtran/Information-Retrieval/hw3/Output/simple.out
+Opened file: /home/phtran/Information-Retrieval/hw3/Output/0.out
+Opened file: /home/phtran/Information-Retrieval/hw3/Output/1.out
+Opened file: /home/phtran/Information-Retrieval/hw3/Output/hard.out
+Opened file: /home/phtran/Information-Retrieval/hw3/Output/3.out
+Opened file: /home/phtran/Information-Retrieval/hw3/Output/uark_26.out
+Opened file: /home/phtran/Information-Retrieval/hw3/Output/medium.out
+----done
+]0;phtran@turing: ~/Information-Retrieval/hw3[01;32mphtran@turing[00m:[01;34m~/Information-Retrieval/hw3[00m$ exit
+exit
+
+Script done on 2024-10-04 21:42:57-0500
