@@ -1,0 +1,586 @@
+Script started on 2024-10-20 21:14:32-0500
+groups: cannot find name for group ID 762800513
+]0;phtran@turing: ~/Information-Retrieval/hw3-part2[01;32mphtran@turing[00m:[01;34m~/Information-Retrieval/hw3-part2[00m$ code .d hw3-part2/[7Pode .p hw3/* /hw3-part2[2P hw3-part2[2Pmkdir[C[C[C[C[C[C[C[C[C[C[2@cp hw3/[C[C[C[C[C[C[C[C[C[C[2Pmkdir[C[C[C[C[C[C[C[C[C[C[2@cp hw3/[C[C[C[C[C[C[C[C[C[C* /hw3-part2ode .[Kd hw3-part2/[7Pode .[Kcode .d hw3-part2/[7Pode .p hw3/* /hw3-part2[2P hw3-part2[2Pmkdir[C[C[C[C[C[C[C[C[C[C[2@cp hw3/[C[C[C[C[C[C[C[C[C[Cd ..[K[3Plsgit push origin side-quest [Korigin side-quest [Kcommit -m 'final hw3 submission'add .[Kcheckout main[7Pbranchpush origin main -f[Kcommit -m 'final hw3 submission' add .[K./tokenize.sh smallfiles/ Output[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[14Prm -rf *.htmlgit commit -m 'homework 3 done'[18Prm -rf *.html./tokenize.sh files/ Output
+----running
+Input Directory: files/
+Output Directory: Output
+
+Processing file files//bu_30.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_16.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_1.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_15.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_29.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_17.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_20.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_8.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_21.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_21.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_1.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_10.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_27.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_8.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_18.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_7.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_28.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//2.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_3.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_6.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_10.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_3.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_19.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_13.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//1.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_8.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_22.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_4.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_4.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_1.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_16.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_24.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_6.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_26.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_2.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_14.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_2.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_29.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//0.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_17.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_11.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_10.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_23.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_23.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_20.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_7.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_22.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_18.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_14.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_30.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_3.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_12.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_12.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_19.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_9.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_15.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_20.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_5.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//3.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_4.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_29.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_9.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_17.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_24.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_12.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_23.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_28.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_13.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_24.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_19.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_11.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_14.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_7.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_21.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_25.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_6.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_11.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_15.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_13.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_16.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_25.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_26.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_22.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_5.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_5.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_27.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_27.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//arizona_18.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_26.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_9.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_25.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//bu_28.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_2.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+
+Processing file files//brown_30.html
+
+Document hashtable should have been filled.
+Time to deal with its contents.
+Done tokenizing.  Good place to write the dict and post files.
+g++ -std=c++17 -IInclude -c src/main.cpp
+g++ -std=c++17 -IInclude -c src/DictFile.cpp
+g++ -std=c++17 -IInclude -c src/InvertedFile.cpp
+g++ -std=c++17 -IInclude -c src/MapFile.cpp
+g++ -std=c++17 -IInclude -c src/PostFile.cpp
+g++ -std=c++17 -IInclude -c src/Utils.cpp
+g++ main.o DictFile.o InvertedFile.o MapFile.o PostFile.o Utils.o -o output
+Running...
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_17.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_17.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_20.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_3.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_3.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_2.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_24.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_18.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_24.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_30.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_29.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_29.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_25.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_8.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_10.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_28.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_8.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_15.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_12.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_30.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_26.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_11.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_20.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_14.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_23.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_28.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/2.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_27.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_22.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_5.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_21.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_1.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_21.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_5.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_18.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_18.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_23.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_9.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_6.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_12.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_7.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_9.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_16.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_4.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_22.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_30.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/0.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_3.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_13.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_14.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_15.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_8.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_6.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_21.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_27.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_16.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_6.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_1.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_15.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_26.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/1.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_19.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_4.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_7.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_26.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_9.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_11.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_25.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_4.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_23.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_25.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_7.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_24.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_16.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_12.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_22.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_1.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_19.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_28.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_10.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/3.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_2.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_20.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_19.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_13.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_27.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_2.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/bu_10.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_17.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_5.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_11.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_29.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/brown_13.out
+Opened file: /home/phtran/Information-Retrieval/hw3-part2/Output/arizona_14.out
+Unique Token Count: 15502
+largest_doc_ht size: 3781
+----done
+]0;phtran@turing: ~/Information-Retrieval/hw3-part2[01;32mphtran@turing[00m:[01;34m~/Information-Retrieval/hw3-part2[00m$ exit
+exit
+
+Script done on 2024-10-20 21:14:56-0500
