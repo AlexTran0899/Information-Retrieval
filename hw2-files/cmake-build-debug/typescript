@@ -1,26 +1,0 @@
-Script started on Fri Sep 20 22:46:30 2024
-/dev/fd/12:18: command not found: compdef
-[1m[7m%[27m[1m[0m                                                                                                                                                                                [0m[27m[24m[Ja1234@1234s-MBP cmake-build-debug % [K[?2004hnode mock.js[12D            [12Dl lls[?2004l
-CMakeCache.txt		CMakeFiles		Testing			build.ninja		cmake_install.cmake	hw2_files		typescript
-[1m[7m%[27m[1m[0m                                                                                                                                                                                [0m[27m[24m[Ja1234@1234s-MBP cmake-build-debug % [K[?2004h../.  ../h` w2_files[1m [0m[0m [?2004l
-Opening files for writing...
-Writing records...
-Records written and files closed.
-Opening files for reading...
-Reading mapFile records...
-doc_name is: Document1                                        
-Map Record 0: Document1                                        
-doc_name is: Document2                                        
-Map Record 1: Document2                                        
-doc_name is: -1
-Map Record 2: -1
-Reading dictFile records...
-Dict Record 0: term=term1, num_docs=2, start=0
-Dict Record 1: term=term2, num_docs=3, start=5
-Dict Record 2: term=-1, num_docs=-1, start=-1
-Reading postFile records...
-Post Record 0: doc_id=0, freq=1
-Post Record 1: doc_id=1, freq=2
-Post Record 2: doc_id=-1, freq=-1
-Files closed after reading.
-[1m[7m%[27m[1m[0m                                                                                                                                                                                [0m[27m[24m[Ja1234@1234s-MBP cmake-build-debug % [K[?2004h
