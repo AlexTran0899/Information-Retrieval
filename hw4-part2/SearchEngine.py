@@ -53,15 +53,27 @@ def read_dict_record(dict_file_path: str, record_num: int, record_size: int) -> 
 def find_dict_record(configs: Dict[str, str], term: str) -> Optional[Dict[str, Union[str, int]]]:
     num_dict_record = estimate_line_count(configs['DICT'], configs['DICT_RECORD_SIZE'])
     doc_id = djb2_hash(term, num_dict_record)
-    dict_record = read_dict_record(configs['DICT'], doc_id, int(configs['DICT_RECORD_SIZE']))
-    if dict_record['term'] == '-1': 
-        print('record not found for term:', term)
-        return None
+    dict_file_path = configs['DICT']
+    dict_record_size = configs['DICT_RECORD_SIZE']
 
-    while dict_record['term'] != term:
-        doc_id += 1
-        dict_record = read_dict_record(configs['DICT'], doc_id, int(configs['DICT_RECORD_SIZE']))
-    return dict_record
+
+    with open(dict_file_path, "r") as file:
+        file.seek(doc_id * dict_record_size)
+        record = parse_dict_record(file.readline())
+        record_search = 1
+        
+        while(record['term'] != term and record['term'] != '-1' and record_search < num_dict_record):
+            doc_id += 1
+            record_search += 1
+            if(doc_id > num_dict_record):
+                file.seek(0)
+                doc_id = 0
+            record = parse_dict_record(file.readline())
+            
+    return record
+        
+
+
 
 
 def retrieve_map_record(configs: Dict[str, str], doc_id:int) -> str:
