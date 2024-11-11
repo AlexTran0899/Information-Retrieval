@@ -1,0 +1,8 @@
+DATA=/home/phtran/Information-Retrieval/hw4-part1/Data/
+INPUT=/home/phtran/Information-Retrieval/hw4-part1/Output/
+DICT=/home/phtran/Information-Retrieval/hw4-part1/Data/dict.data
+DICT_RECORD_SIZE=65
+POST=/home/phtran/Information-Retrieval/hw4-part1/Data/post.data
+POST_RECORD_SIZE=20
+MAP=/home/phtran/Information-Retrieval/hw4-part1/Data/map.data
+MAP_RECORD_SIZE=50
