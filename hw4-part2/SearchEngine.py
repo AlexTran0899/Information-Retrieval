@@ -1,5 +1,6 @@
 import sys
 import os
+import time
 from typing import List, Dict, Optional, Union
 
 def estimate_line_count(filename: str, record_size: Union[int, str]) -> int:
@@ -54,8 +55,7 @@ def find_dict_record(configs: Dict[str, str], term: str) -> Optional[Dict[str, U
     num_dict_record = estimate_line_count(configs['DICT'], configs['DICT_RECORD_SIZE'])
     doc_id = djb2_hash(term, num_dict_record)
     dict_file_path = configs['DICT']
-    dict_record_size = configs['DICT_RECORD_SIZE']
-
+    dict_record_size = int(configs['DICT_RECORD_SIZE'])
 
     with open(dict_file_path, "r") as file:
         file.seek(doc_id * dict_record_size)
@@ -65,15 +65,15 @@ def find_dict_record(configs: Dict[str, str], term: str) -> Optional[Dict[str, U
         while(record['term'] != term and record['term'] != '-1' and record_search < num_dict_record):
             doc_id += 1
             record_search += 1
-            if(doc_id > num_dict_record):
+            if(doc_id > num_dict_record - 1):
                 file.seek(0)
                 doc_id = 0
             record = parse_dict_record(file.readline())
-            
+
+    if record['term'] == '-1': return False
+    
     return record
         
-
-
 
 
 def retrieve_map_record(configs: Dict[str, str], doc_id:int) -> str:
@@ -138,6 +138,7 @@ class Accumulator:
         return acc[:k]
 
 def main() -> None:
+    start_time = time.time()
     if len(sys.argv) < 3:
         print("Usage: python3 SearchEngine.py <file_path> <query1> <query2> ...")
         sys.exit(1)
@@ -157,10 +158,16 @@ def main() -> None:
             for post_record in post_records:
                 accumulator.insert(post_record['doc_id'], post_record['weight'])
 
-    top_k_element = accumulator.get_top_k(100)
+    top_k_element = accumulator.get_top_k(10)
     for element in top_k_element:
         file_name = retrieve_map_record(configs, element[0])
         print("filename: ",file_name, "- weight: ", element[1])
+
+       # Calculate and print the elapsed time in milliseconds
+    end_time = time.time()  # End time in seconds
+    elapsed_time_ms = (end_time - start_time) * 1000  # Convert to milliseconds
+    print(f"Execution time: {elapsed_time_ms:.2f} ms")
+
 
 if __name__ == "__main__":
     main()

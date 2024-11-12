@@ -158,7 +158,7 @@ int main(int argc, char* argv[]) {
         if(stop_words.find(pair.first) != stop_words.end()) continue;
         
         int index = djb2_hash(pair.first, dict_file.size() * 3);
-        while(!dict_file_arr[index].isEmpty()) index += 1;
+        while(!dict_file_arr[index].isEmpty()) index = (index + 1) % dict_file_arr.size();
         dict_file_arr[index] = {pair.first, (int)pair.second.size(), start};
 
         for(const auto & posting : pair.second) {

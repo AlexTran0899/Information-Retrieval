@@ -46,7 +46,7 @@ bool PostFile::writeRecord(const int& doc_id, const double& tf_idf) {
 
     this->post_file
     << std::setw(10) << std::left << doc_id
-    << std::setw(9) << std::left << tf_idf
+    << std::setw(9) << std::left << std::fixed << std::setprecision(6) << tf_idf
     << std::endl;
 
     this->num_records += 1;
