@@ -23,7 +23,15 @@ def retrieve_post_record(configs: Dict[str, str], start: int, num_docs: int) -> 
     return post_records
 
 def process_term(terms: List[str]) -> List[str]:
-    return [term.lower() for term in terms]  # Convert terms to lowercase
+    res = []
+    for term in terms:
+        temp = []
+        for char in term:
+            char = char.lower()
+            if char >= 'a' and char <= 'z':
+                temp.append(char)
+        res.append(''.join(temp))
+    return res
 
 def load_config() -> Dict[str, str]:
     configs = {}
