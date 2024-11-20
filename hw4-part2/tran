@@ -1,0 +1,19 @@
+Script started on 2024-11-11 20:16:14-0600
+groups: cannot find name for group ID 762800513
+]0;phtran@turing: ~/Information-Retrieval/hw4-part2[01;32mphtran@turing[00m:[01;34m~/Information-Retrieval/hw4-part2[00m$ exitpython3 SearchEngine.py query quickly[4Pdog
+filename:  0.out - weight:  0.5
+filename:  1.out - weight:  0.4
+]0;phtran@turing: ~/Information-Retrieval/hw4-part2[01;32mphtran@turing[00m:[01;34m~/Information-Retrieval/hw4-part2[00m$ python3 SearchEngine.py query dog[K[K[Kquickly
+filename:  0.out - weight:  0.75
+]0;phtran@turing: ~/Information-Retrieval/hw4-part2[01;32mphtran@turing[00m:[01;34m~/Information-Retrieval/hw4-part2[00m$ python3 SearchEngine.py query quickly[K[K[K[K[K[K[Kdoc[Kg quickly
+filename:  0.out - weight:  1.25
+filename:  1.out - weight:  0.4
+]0;phtran@turing: ~/Information-Retrieval/hw4-part2[01;32mphtran@turing[00m:[01;34m~/Information-Retrieval/hw4-part2[00m$ python3 SearchEngine.py query dog quickly[K[K[K[K[K[K[K[K[K[K[Kfish
+]0;phtran@turing: ~/Information-Retrieval/hw4-part2[01;32mphtran@turing[00m:[01;34m~/Information-Retrieval/hw4-part2[00m$ python3 SearchEngine.py query fish[K[K[K[Kthe
+]0;phtran@turing: ~/Information-Retrieval/hw4-part2[01;32mphtran@turing[00m:[01;34m~/Information-Retrieval/hw4-part2[00m$ python3 SearchEngine.py query the dog
+filename:  0.out - weight:  0.5
+filename:  1.out - weight:  0.4
+]0;phtran@turing: ~/Information-Retrieval/hw4-part2[01;32mphtran@turing[00m:[01;34m~/Information-Retrieval/hw4-part2[00m$ exit
+exit
+
+Script done on 2024-11-11 20:16:43-0600
