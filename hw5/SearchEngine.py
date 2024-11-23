@@ -1,6 +1,5 @@
-import sys
+from flask import Flask, request, jsonify, send_from_directory
 import os
-import time
 from typing import List, Dict, Optional, Union
 
 def estimate_line_count(filename: str, record_size: Union[int, str]) -> int:
@@ -37,6 +36,7 @@ def load_config() -> Dict[str, str]:
     configs = {}
     with open("CONFIG", "r") as file:
         for line in file:
+            print(line)
             key, value = line.split('=')
             configs[key.strip()] = value.strip()
     return configs
@@ -145,37 +145,59 @@ class Accumulator:
         
         return acc[:k]
 
-def main() -> None:
-    start_time = time.time()
-    if len(sys.argv) < 3:
-        print("Usage: python3 SearchEngine.py query <query1> <query2> ...")
-        sys.exit(1)
+from flask import Flask, request, jsonify, send_from_directory
+import os
+from typing import List, Dict, Optional, Union
 
-    configs = load_config()
-    query = sys.argv[1]
-    terms = process_term(sys.argv[2:])
+# Include all your utility functions and classes here
 
-    accumulator = Accumulator()
+# Set up the static folder to point to /client/build
+app = Flask(__name__, static_folder="client/build", static_url_path="/")
 
-    if query == 'query':
-        for term in terms:
-            dict_record = find_dict_record(configs, term)
-            if not dict_record: continue
-            post_records = retrieve_post_record(configs, dict_record['start'], dict_record['num_docs'])
-            
-            for post_record in post_records:
-                accumulator.insert(post_record['doc_id'], post_record['weight'])
+@app.route('/search', methods=['POST'])
+def search():
+    try:
+        data = request.json
+        query_type = data.get('query')
+        terms = data.get('terms', [])
+        if not query_type or not terms:
+            return jsonify({"error": "Invalid input. 'query' and 'terms' are required."}), 400
 
-    top_k_element = accumulator.get_top_k(10)
-    for element in top_k_element:
-        file_name = retrieve_map_record(configs, element[0])
-        print("filename: ",file_name, "- weight: ", element[1])
+        configs = load_config()
+        processed_terms = process_term(terms)
 
-       # Calculate and print the elapsed time in milliseconds
-    end_time = time.time()  # End time in seconds
-    elapsed_time_ms = (end_time - start_time) * 1000  # Convert to milliseconds
-    print(f"Execution time: {elapsed_time_ms:.2f} ms")
+        accumulator = Accumulator()
 
+        if query_type == 'query':
+            for term in processed_terms:
+                dict_record = find_dict_record(configs, term)
+                if not dict_record:
+                    continue
+                post_records = retrieve_post_record(configs, dict_record['start'], dict_record['num_docs'])
+                for post_record in post_records:
+                    accumulator.insert(post_record['doc_id'], post_record['weight'])
 
-if __name__ == "__main__":
-    main()
+        top_k_element = accumulator.get_top_k(10)
+        results = []
+        for element in top_k_element:
+            file_name = retrieve_map_record(configs, element[0])
+            base_name, ext = os.path.splitext(file_name)
+            if ext == '.out':
+                file_name = f"{base_name}.html"
+            results.append({"filename": file_name, "weight": element[1]})
+
+        return jsonify({"results": results})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+# Serve React static files
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def serve_react_app(path):
+    if path != "" and os.path.exists(os.path.join(app.static_folder, path)):
+        return send_from_directory(app.static_folder, path)
+    else:
+        return send_from_directory(app.static_folder, 'index.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
