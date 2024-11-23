@@ -151,8 +151,8 @@ from typing import List, Dict, Optional, Union
 
 # Include all your utility functions and classes here
 
-# Set up the static folder to point to /client/build
-app = Flask(__name__, static_folder="client/build", static_url_path="/")
+# Set up the static folder to point to build
+app = Flask(__name__, static_folder="build", static_url_path="/")
 
 @app.route('/search', methods=['POST'])
 def search():
@@ -200,4 +200,4 @@ def serve_react_app(path):
         return send_from_directory(app.static_folder, 'index.html')
 
 if __name__ == '__main__':
-    app.run(debug=True, port=os.getenv("PORT", default=5000))
+    app.run(port=5000)
