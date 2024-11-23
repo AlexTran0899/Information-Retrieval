@@ -200,4 +200,4 @@ def serve_react_app(path):
         return send_from_directory(app.static_folder, 'index.html')
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True, port=os.getenv("PORT", default=5000))
