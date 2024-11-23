@@ -1,0 +1,6 @@
+DICT=Data/dict.data
+DICT_RECORD_SIZE=65
+POST=Data/post.data
+POST_RECORD_SIZE=20
+MAP=Data/map.data
+MAP_RECORD_SIZE=50

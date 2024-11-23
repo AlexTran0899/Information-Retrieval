@@ -148,7 +148,7 @@ class Accumulator:
 def main() -> None:
     start_time = time.time()
     if len(sys.argv) < 3:
-        print("Usage: python3 SearchEngine.py <file_path> <query1> <query2> ...")
+        print("Usage: python3 SearchEngine.py query <query1> <query2> ...")
         sys.exit(1)
 
     configs = load_config()
